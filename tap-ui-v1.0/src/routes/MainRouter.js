@@ -6,18 +6,18 @@ import ForgotPasswordView from "../components/client/forgetpassword/ForgetPasswo
 import Otp from "../components/client/forgetpassword/Otp";
 import ConfirmPassword from "../components/client/forgetpassword/ConfirmPassword";
 import ResetPassword from "../components/client/ResetPassword/ResetPassword";
-import HomePage from "../components/Home/Home";
 import CandidateTable from "../components/HiredCandidate.js/CandidateTable";
 import Requirement from "../components/client/requirements/Requirement";
 import JobRequirementsTable from "../components/client/requirements/JobRequirementsTable";
 import ClientDashboardView from "../views/ClientDashboardView";
+import Login from "../components/Login/Login";
 
 const MainRouter = () => {
   return (
     <Router>
       <Routes>
         {/* <Route path="/" element={<ExampleView />} /> */}
-        <Route path="/" element={<HomePage />} />
+        <Route path="/" element={<Login />} />
         <Route path="/forgetpassword" element={<ForgotPasswordView />} />
         <Route path="/otp" element={<Otp />} />
         <Route path="/confirmpassword" element={<ConfirmPassword />} />
